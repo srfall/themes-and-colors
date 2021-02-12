@@ -1,0 +1,17 @@
+Package: themesNcolors
+Title: Themes and Colors for ggplot
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "srf",
+           family = "all",
+           role = c("aut", "cre"),
+           email = "noreply@srfall.com")
+Description: A place where to store my preferred ggplot themes and colors.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Depends:
+        ggplot2,
+        ggtext
