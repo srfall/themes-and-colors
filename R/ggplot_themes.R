@@ -10,28 +10,28 @@
 #'   theme_one()
 #' @export
 theme_one <- function () {
-  theme_bw(base_size = 12) %+replace%
-    theme(
-       panel.background  = element_blank(),
-     # plot.background = element_rect(fill="gray96", colour = NA),
-       legend.background = element_rect(fill="transparent", colour = NA),
-       legend.key = element_rect(fill="transparent", colour = NA),
-       legend.position = "right",
-        plot.margin = margin(25, 35, 15, 35),
-        panel.grid.minor = element_blank(),
-        legend.key.size = unit(0.5, "cm"),
-        legend.text = element_text(color = "grey30", size = 15, face ="bold"),
-        legend.title = element_text(color = "grey30", size = 17, face ="bold"),
-        axis.text.x = element_text(angle = 0, vjust = 1, hjust = 0, size = 15),
-        axis.text.y = element_text(size = 15),
-        axis.title.y = element_text(angle=90, vjust=3,size = 15),
-        axis.title.x = element_text(size = 15),
-        plot.title = element_text(size=17, vjust=3))
+  theme_bw() +
+    theme( legend.position = "right",
+           plot.margin = margin(25, 35, 15, 35),
+           # plot.background = element_rect(fill="gray96", colour = NA),
+           panel.background = element_blank(),
+           panel.grid.minor = element_blank(),
+           legend.background = element_rect(fill="transparent", colour = NA),
+           legend.key = element_rect(fill="transparent", colour = NA),
+           legend.key.size = unit(1, "cm"),
+           legend.text = element_text(color = "grey30", size = 15, face ="bold"),
+           legend.title = element_text(color = "grey30", size = 17, face ="bold"),
+           axis.text.x = element_text(angle = 0, vjust = 1, hjust = 0, size = 15),
+           axis.text.y = element_text(size = 15),
+           axis.title.y = element_text(angle=90, vjust=3,size = 15),
+           axis.title.x = element_text(size = 15),
+           plot.title = element_text(size=17, vjust=3))
 }
+
 
 #' Theme two
 #'
-#' ggplot theme with an empty dark background
+#' ggplot theme with a clean light colored background
 #'
 #' @examples
 #' test<- data.frame(x=1:10,y=rnorm(10),type=rbinom(10,1,0.3))
@@ -41,6 +41,37 @@ theme_one <- function () {
 #'   theme_two()
 #' @export
 theme_two <- function () {
+  theme_bw() +
+    theme( legend.position = "right",
+           plot.margin = margin(25, 35, 15, 35),
+           # plot.background = element_rect(fill = "grey95"),
+           panel.background = element_rect(fill = "#FAF7F2"),#"gray96"
+           panel.grid.minor = element_blank(),
+           #panel.grid.major = element_blank(),
+           #legend.background = element_rect(fill = "grey95"),
+           legend.key.size = unit(1, "cm"),
+           legend.text = element_text(color = "grey30", size = 15, face ="bold"),
+           legend.title = element_text(color = "grey30", size = 17, face ="bold"),
+           axis.text.x = element_text(angle = 0, vjust = 1, hjust = 0, size = 15),
+           axis.text.y = element_text(size = 15),
+           axis.title.y = element_text(angle=90, vjust=3,size = 15),
+           axis.title.x = element_text(size = 15),
+           plot.title = element_text(size=17, vjust=3))
+}
+
+
+#' Theme three
+#'
+#' ggplot theme with an empty dark background
+#'
+#' @examples
+#' test<- data.frame(x=1:10,y=rnorm(10),type=rbinom(10,1,0.3))
+#'
+#' ggplot(test,aes(x=x,y=y,colour=type))+
+#'   geom_point()+
+#'   theme_three()
+#' @export
+theme_three <- function () {
   theme_void() +
     theme(
       legend.position = "right",
@@ -61,36 +92,5 @@ theme_two <- function () {
       legend.text = element_text(color = "grey50", size = 17, face ="bold"),
       legend.title = element_text(color = "grey50", size = 19, face ="bold")
     )
-}
-
-
-#' Theme three
-#'
-#' ggplot theme with a clean light colored background
-#'
-#' @examples
-#' test<- data.frame(x=1:10,y=rnorm(10),type=rbinom(10,1,0.3))
-#'
-#' ggplot(test,aes(x=x,y=y,colour=type))+
-#'   geom_point()+
-#'   theme_three()
-#' @export
-theme_three <- function () {
-  theme_bw() +
-    theme( legend.position = "right",
-           plot.margin = margin(25, 35, 15, 35),
-          # plot.background = element_rect(fill = "grey95"),
-           panel.background = element_rect(fill = "#FAF7F2"),#"gray96"
-           panel.grid.minor = element_blank(),
-          #panel.grid.major = element_blank(),
-          #legend.background = element_rect(fill = "grey95"),
-           legend.key.size = unit(0.5, "cm"),
-           legend.text = element_text(color = "grey30", size = 15, face ="bold"),
-           legend.title = element_text(color = "grey30", size = 17, face ="bold"),
-           axis.text.x = element_text(angle = 0, vjust = 1, hjust = 0, size = 15),
-           axis.text.y = element_text(size = 15),
-           axis.title.y = element_text(angle=90, vjust=3,size = 15),
-           axis.title.x = element_text(size = 15),
-           plot.title = element_text(size=17, vjust=3))
 }
 
