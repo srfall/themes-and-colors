@@ -77,6 +77,35 @@ theme_three <- function () {
       legend.position = "right",
       plot.margin = margin(25, 35, 15, 35),
       plot.background = element_rect(fill = "#171717"),
+      # axis.text.x = element_text(angle = 0, vjust = 1, hjust = 0, size = 15),
+      # axis.text.y = element_text(size = 15),
+      # axis.title.y = element_text(angle=90, vjust=3,size = 15),
+      # axis.title.x = element_text(size = 15),
+      plot.title = element_text(size=17, vjust=3),
+      legend.key.size = unit(1, "cm"),
+      legend.text = element_text(color = "grey30", size = 15, face ="bold"),
+      legend.title = element_text(color = "grey30", size = 17, face ="bold")
+    )
+}
+
+
+#' Theme four
+#'
+#' ggplot theme with an empty dark background and large legend
+#'
+#' @examples
+#' test<- data.frame(x=1:10,y=rnorm(10),type=rbinom(10,1,0.3))
+#'
+#' ggplot(test,aes(x=x,y=y,colour=type))+
+#'   geom_point()+
+#'   theme_four()
+#' @export
+theme_four <- function () {
+  theme_void() +
+    theme(
+      legend.position = "right",
+      plot.margin = margin(25, 35, 15, 35),
+      plot.background = element_rect(fill = "#171717"),
       plot.title = element_markdown(color = "grey70", size = 27,
                                     #family = "Calibri",
                                     face = "bold",
@@ -93,4 +122,3 @@ theme_three <- function () {
       legend.title = element_text(color = "grey50", size = 19, face ="bold")
     )
 }
-
