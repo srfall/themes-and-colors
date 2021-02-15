@@ -7,7 +7,7 @@
 theme_two()
 }
 \description{
-ggplot theme with an empty dark background
+ggplot theme with a clean light colored background
 }
 \examples{
 test<- data.frame(x=1:10,y=rnorm(10),type=rbinom(10,1,0.3))

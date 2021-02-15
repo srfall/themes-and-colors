@@ -33,3 +33,10 @@ ggplot(test,aes(x=x,y=y,colour=type))+
 ggsave(here("img","four.png"),
        width = 10.5, height = 6.34,
        device = "png")
+
+ggplot(test,aes(x=x,y=y,colour=type))+
+  geom_point()+
+  theme_five()
+ggsave(here("img","five.png"),
+       width = 10.5, height = 6.34,
+       device = "png")
