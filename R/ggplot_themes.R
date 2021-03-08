@@ -156,7 +156,7 @@ theme_five <- function () {
 
 #' Theme six
 #'
-#' like theme six, but ligth
+#' like theme five, but ligth
 #'
 #' @examples
 #' test<- data.frame(x=1:10,y=rnorm(10),type=rbinom(10,1,0.3))
