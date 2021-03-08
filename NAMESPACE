@@ -3,6 +3,7 @@
 export(theme_five)
 export(theme_four)
 export(theme_one)
+export(theme_six)
 export(theme_three)
 export(theme_two)
 import(ggplot2)
