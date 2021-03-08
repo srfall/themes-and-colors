@@ -13,8 +13,11 @@ theme_one <- function () {
   theme_bw() +
     theme( legend.position = "right",
            plot.margin = margin(25, 20, 15, 20),
+           plot.background = element_rect(linetype="solid",
+                                          colour="black"),
            # plot.background = element_rect(fill="gray96", colour = NA),
            panel.background = element_blank(),
+           panel.border = element_blank(),
            panel.grid.minor = element_blank(),
            panel.grid.major = element_blank(),
            legend.background = element_rect(fill="transparent", colour = NA),
@@ -26,6 +29,7 @@ theme_one <- function () {
            axis.text.y = element_text(size = 14),
            axis.title.y = element_text(angle=90, vjust=3,size = 15),
            axis.title.x = element_text(size = 15),
+           axis.line = element_line(linetype="solid",color = "grey30"),
            plot.title = element_text(size=17, vjust=3))
 }
 
@@ -172,10 +176,11 @@ theme_six <- function () {
     theme_bw() +
       theme( legend.position = "right",
              plot.margin = margin(25, 20, 15, 20),
-             # plot.background = element_rect(fill="gray96", colour = NA),
-             panel.background = element_blank(),
+             plot.background = element_rect(linetype="solid",
+                                             colour="black"),
              panel.grid.minor = element_blank(),
              panel.grid.major = element_blank(),
+             panel.border = element_blank(),
              legend.background = element_rect(fill="transparent", colour = NA),
              legend.key = element_rect(fill="transparent", colour = NA),
              legend.key.size = unit(1, "cm"),
@@ -187,6 +192,7 @@ theme_six <- function () {
              axis.ticks = element_blank(),
              axis.title.y = element_text(angle=90, vjust=3,size = 15),
              axis.title.x = element_text(size = 15),
+             axis.line = element_line(linetype="solid",color = "grey30"),
              plot.title = element_text(size=17, vjust=3))
   }
 }
