@@ -12,7 +12,7 @@
 theme_one <- function () {
   theme_bw() +
     theme( legend.position = "right",
-           plot.margin = margin(25, 35, 15, 35),
+           plot.margin = margin(25, 20, 15, 20),
            # plot.background = element_rect(fill="gray96", colour = NA),
            panel.background = element_blank(),
            panel.grid.minor = element_blank(),
@@ -20,10 +20,10 @@ theme_one <- function () {
            legend.background = element_rect(fill="transparent", colour = NA),
            legend.key = element_rect(fill="transparent", colour = NA),
            legend.key.size = unit(1, "cm"),
-           legend.text = element_text(color = "grey30", size = 15, face ="bold"),
-           legend.title = element_text(color = "grey30", size = 17, face ="bold"),
-           axis.text.x = element_text(angle = 0, vjust = 1, hjust = 0, size = 15),
-           axis.text.y = element_text(size = 15),
+           legend.text = element_text(color = "grey30", size = 14, face ="bold"),
+           legend.title = element_text(color = "grey30", size = 16, face ="bold"),
+           axis.text.x = element_text(angle = 0, vjust = 1, hjust = 0, size = 14),
+           axis.text.y = element_text(size = 14),
            axis.title.y = element_text(angle=90, vjust=3,size = 15),
            axis.title.x = element_text(size = 15),
            plot.title = element_text(size=17, vjust=3))
@@ -44,7 +44,7 @@ theme_one <- function () {
 theme_two <- function () {
   theme_bw() +
     theme( legend.position = "right",
-           plot.margin = margin(25, 35, 15, 35),
+           plot.margin = margin(25, 20, 15, 20),
            # plot.background = element_rect(fill = "grey95"),
            panel.background = element_rect(fill = "#FAF7F2"),#"gray96"
            panel.grid.minor = element_blank(),
@@ -76,16 +76,17 @@ theme_three <- function () {
   theme_void() +
     theme(
       legend.position = "right",
-      plot.margin = margin(25, 35, 15, 35),
+      plot.margin = margin(25, 20, 15, 20),
       plot.background = element_rect(fill = "#171717"),
       # axis.text.x = element_text(angle = 0, vjust = 1, hjust = 0, size = 15),
       # axis.text.y = element_text(size = 15),
       # axis.title.y = element_text(angle=90, vjust=3,size = 15),
       # axis.title.x = element_text(size = 15),
       plot.title = element_text(size=17, vjust=3),
+      legend.box.margin=margin(-5,-8,-5,-5),
       legend.key.size = unit(1, "cm"),
-      legend.text = element_text(color = "grey50", size = 15, face ="bold"),
-      legend.title = element_text(color = "grey50", size = 17, face ="bold")
+      legend.text = element_text(color = "grey50", size = 14, face ="bold"),
+      legend.title = element_text(color = "grey50", size = 16, face ="bold")
     )
 }
 
@@ -105,7 +106,7 @@ theme_four <- function () {
   theme_void() +
     theme(
       legend.position = "right",
-      plot.margin = margin(25, 35, 15, 35),
+      plot.margin = margin(25, 20, 15, 20),
       plot.background = element_rect(fill = "#171717"),
       plot.title = element_markdown(color = "grey70", size = 27,
                                     #family = "Calibri",
@@ -114,7 +115,7 @@ theme_four <- function () {
                                     hjust = 0.5),
       plot.subtitle = element_markdown(color = "grey50", size = 20,
                                        lineheight = 1.2,
-                                       margin = margin(t = 15, b = 35),
+                                       margin = margin(t = 15, b = 20),
                                        hjust = 0.5),
       plot.caption = element_text(color = "grey70", size = 15,
                                   margin = margin(t = 0)),
@@ -140,16 +141,17 @@ theme_five <- function () {
   theme_void() +
     theme(
       legend.position = "right",
-      plot.margin = margin(25, 35, 15, 35),
+      plot.margin = margin(25, 20, 15, 20),
       plot.background = element_rect(fill = "#171717"),
       plot.title = element_text(size=17, vjust=3),
       legend.key.size = unit(1, "cm"),
+      legend.box.margin=margin(-5,-8,-5,-5),
       # axis.text.x = element_text(angle = 0, vjust = 1, hjust = 0, size = 15,color = "grey50"),
       # axis.text.y = element_text(size = 15,color = "grey50"),
       axis.title.y = element_text(angle=90, vjust=3,size = 17,color = "grey50"),
       axis.title.x = element_text(size = 17,color = "grey50"),
-      legend.text = element_text(color = "grey50", size = 15, face ="bold"),
-      legend.title = element_text(color = "grey50", size = 17, face ="bold")
+      legend.text = element_text(color = "grey50", size = 14, face ="bold"),
+      legend.title = element_text(color = "grey50", size = 16, face ="bold")
     )
 }
 
@@ -169,7 +171,7 @@ theme_six <- function () {
   {
     theme_bw() +
       theme( legend.position = "right",
-             plot.margin = margin(25, 35, 15, 35),
+             plot.margin = margin(25, 20, 15, 20),
              # plot.background = element_rect(fill="gray96", colour = NA),
              panel.background = element_blank(),
              panel.grid.minor = element_blank(),
@@ -177,8 +179,9 @@ theme_six <- function () {
              legend.background = element_rect(fill="transparent", colour = NA),
              legend.key = element_rect(fill="transparent", colour = NA),
              legend.key.size = unit(1, "cm"),
-             legend.text = element_text(color = "grey30", size = 15, face ="bold"),
-             legend.title = element_text(color = "grey30", size = 17, face ="bold"),
+             legend.text = element_text(color = "grey30", size = 14, face ="bold"),
+             legend.title = element_text(color = "grey30", size = 16, face ="bold"),
+             legend.box.margin=margin(-5,-8,-5,-5),
              axis.text.x = element_blank(),
              axis.text.y = element_blank(),
              axis.ticks = element_blank(),
