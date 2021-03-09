@@ -176,8 +176,8 @@ theme_six <- function () {
     theme_bw() +
       theme( legend.position = "right",
              plot.margin = margin(25, 20, 15, 20),
-             plot.background = element_rect(linetype="solid",
-                                             colour="black"),
+             # plot.background = element_rect(linetype="solid",
+             #                                 colour="black"),
              panel.grid.minor = element_blank(),
              panel.grid.major = element_blank(),
              panel.border = element_blank(),
