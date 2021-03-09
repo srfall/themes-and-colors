@@ -13,8 +13,8 @@ theme_one <- function () {
   theme_bw() +
     theme( legend.position = "right",
            plot.margin = margin(25, 20, 15, 20),
-           plot.background = element_rect(linetype="solid",
-                                          colour="black"),
+           # plot.background = element_rect(linetype="solid",
+           #                                colour="black"),
            # plot.background = element_rect(fill="gray96", colour = NA),
            panel.background = element_blank(),
            panel.border = element_blank(),
